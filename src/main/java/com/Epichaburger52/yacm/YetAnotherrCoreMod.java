@@ -1,5 +1,6 @@
 package com.Epichaburger52.yacm;
 
+import com.Epichaburger52.yacm.Keys.Keys;
 import com.Epichaburger52.yacm.items.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
@@ -25,6 +26,7 @@ public class YetAnotherrCoreMod
         eventBus.addListener(this::setup);
 
         ModItems.register(eventBus);
+        Keys.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
