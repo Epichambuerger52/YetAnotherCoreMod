@@ -1,6 +1,7 @@
 package com.Epichaburger52.yacm.Events;
 
 
+import com.Epichaburger52.yacm.GUI.MainGUI;
 import com.Epichaburger52.yacm.Keys.Keys;
 import com.Epichaburger52.yacm.YetAnotherrCoreMod;
 import net.minecraft.client.Minecraft;
@@ -37,7 +38,7 @@ private ClientForgeEvents(){
 
         if(mc.screen == null && Keys.OpenGUI.isDown()){
 
-
+            Minecraft.getInstance().setScreen(new MainGUI());
 
         }
 
