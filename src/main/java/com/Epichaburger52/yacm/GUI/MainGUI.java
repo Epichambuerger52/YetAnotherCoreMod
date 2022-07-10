@@ -11,10 +11,10 @@ import net.minecraft.resources.ResourceLocation;
 public class MainGUI extends Screen {
 
     final ResourceLocation GUI = new ResourceLocation(YetAnotherrCoreMod.MOD_ID,"textures/gui/gui.png");
-    int GUIX =  200;
-    int GUIY = 175;
-    int relx =(this.height - GUIX)/2 ;
-    int rely= (this.height - GUIY)/2 ;
+    int HEIGHT = 205;
+    int WIDTH= 145;
+    int relHEIGHT =(height - HEIGHT)/2 ;
+    int relWIDTH= (height - WIDTH)/2 ;
 
 
 public  MainGUI()
@@ -28,12 +28,12 @@ public  MainGUI()
     @Override
     public void render(PoseStack pPoseStack, int pMouseX, int pMouseY, float pPartialTick) {
         RenderSystem.colorMask(true,true,true,true);
-        Minecraft.getInstance().textureManager.bindForSetup(GUI);
+        RenderSystem.setShaderTexture(0, GUI);
 
-        int relx =(this.height - GUIX)/2 ;
-        int rely= (this.height - GUIY)/2 ;
+        int relHEIGHT =(height - HEIGHT)/2 ;
+        int relWIDTH= (height - WIDTH)/2 ;
 
-        blit(pPoseStack,relx,rely,0,0,GUIX,GUIY);
+        blit(pPoseStack,relHEIGHT,relWIDTH,0,0,HEIGHT,WIDTH);
 
 
 
