@@ -1,6 +1,7 @@
 package com.Epichaburger52.yacm;
 
 import com.Epichaburger52.yacm.Keys.Keys;
+import com.Epichaburger52.yacm.Network.Networking;
 import com.Epichaburger52.yacm.items.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
@@ -33,6 +34,8 @@ public class YetAnotherrCoreMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
+
+        Networking.register();
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());

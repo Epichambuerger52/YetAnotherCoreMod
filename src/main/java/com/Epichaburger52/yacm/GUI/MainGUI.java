@@ -11,10 +11,10 @@ import net.minecraft.resources.ResourceLocation;
 public class MainGUI extends Screen {
 
     final ResourceLocation GUI = new ResourceLocation(YetAnotherrCoreMod.MOD_ID,"textures/gui/gui.png");
-    int HEIGHT = 205;
-    int WIDTH= 145;
+    int HEIGHT = 201;
+    int WIDTH = 145;
     int relHEIGHT =(height - HEIGHT)/2 ;
-    int relWIDTH= (height - WIDTH)/2 ;
+    int relWIDTH= (width - WIDTH)/2 ;
 
 
 public  MainGUI()
@@ -31,9 +31,9 @@ public  MainGUI()
         RenderSystem.setShaderTexture(0, GUI);
 
         int relHEIGHT =(height - HEIGHT)/2 ;
-        int relWIDTH= (height - WIDTH)/2 ;
+        int relWIDTH= (width - WIDTH)/2 ;
 
-        blit(pPoseStack,relHEIGHT,relWIDTH,0,0,HEIGHT,WIDTH);
+        blit(pPoseStack,relWIDTH,relHEIGHT,0,0,HEIGHT,WIDTH);
 
 
 
