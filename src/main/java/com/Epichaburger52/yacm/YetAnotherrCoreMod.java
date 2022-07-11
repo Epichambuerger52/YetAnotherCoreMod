@@ -2,12 +2,16 @@ package com.Epichaburger52.yacm;
 
 import com.Epichaburger52.yacm.Keys.Keys;
 import com.Epichaburger52.yacm.Network.Networking;
+import com.Epichaburger52.yacm.config.YetAnotherCoreModClientConfig;
+import com.Epichaburger52.yacm.config.YetAnotherCoreModServerConfig;
 import com.Epichaburger52.yacm.items.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -28,6 +32,14 @@ public class YetAnotherrCoreMod
 
         ModItems.register(eventBus);
         Keys.init();
+
+
+        ModLoadingContext.get().registerConfig
+                (ModConfig.Type.CLIENT, YetAnotherCoreModClientConfig.SPEC,"yacm-client.toml");
+
+        ModLoadingContext.get().registerConfig
+                (ModConfig.Type.COMMON, YetAnotherCoreModServerConfig.SPEC,"yacm-common.toml");
+
 
         MinecraftForge.EVENT_BUS.register(this);
     }
