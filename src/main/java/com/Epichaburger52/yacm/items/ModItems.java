@@ -1,7 +1,6 @@
 package com.Epichaburger52.yacm.items;
 
 import com.Epichaburger52.yacm.YetAnotherrCoreMod;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,7 +16,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> MODIUM_INGOT =
             ITEMS.register("modium_ingot",
-                    ()-> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+                    ()-> new Item(new Item.Properties().tab(ModCreativeTab.YACM_TAB)));
 
 
     public static void register(IEventBus eventBus){

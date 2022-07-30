@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 public class MainGUI extends Screen {
 
     final ResourceLocation GUI = new ResourceLocation(YetAnotherrCoreMod.MOD_ID,"textures/gui/gui.png");
-    int HEIGHT = 201;
+    int HEIGHT = 202;
     int WIDTH = 145;
     int relHEIGHT =(height - HEIGHT)/2 ;
     int relWIDTH= (width - WIDTH)/2 ;
