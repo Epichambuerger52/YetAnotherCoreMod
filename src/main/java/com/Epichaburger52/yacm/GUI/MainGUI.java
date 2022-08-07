@@ -41,11 +41,34 @@ public  MainGUI()
 
 
 
-        addRenderableWidget(new Button(relHEIGHT,relWIDTH,10,10,new TranslatableComponent("yacm.menu.button"), pButton -> {
+        //addRenderableWidget(new Button(relWIDTH +10,relHEIGHT +10,11,11,new TranslatableComponent("yacm.menu.button"), pButton -> {
+
+        //}));
+        addRenderableWidget(new ImageButton(relWIDTH +10,relHEIGHT +10,10,10,0,10,0,GUIBUTTON,256,256,pButton -> {
 
         }));
 
+        addRenderableWidget(new ImageButton(relWIDTH +10,relHEIGHT +25,10,10,0,10,0,GUIBUTTON,256,256,pButton -> {
 
+        }));
+
+        addRenderableWidget(new ImageButton(relWIDTH +10,relHEIGHT +40,10,10,0,10,0,GUIBUTTON,256,256,pButton -> {
+
+        }));
+
+        addRenderableWidget(new ImageButton(relWIDTH +10,relHEIGHT +55,10,10,0,10,0,GUIBUTTON,256,256,pButton -> {
+
+        }));
+
+        addRenderableWidget(new ImageButton(relWIDTH +10,relHEIGHT +70,10,10,0,10,0,GUIBUTTON,256,256,pButton -> {
+
+        }));
+
+        addRenderableWidget(new ImageButton(relWIDTH +10,relHEIGHT +85,10,10,0,10,0,GUIBUTTON,256,256,pButton -> {
+
+        }));
+
+        drawString(pPoseStack,font,"000",relWIDTH +20,relHEIGHT +10 + 2,16777215);
         super.render(pPoseStack, pMouseX, pMouseY, pPartialTick);
     }
 

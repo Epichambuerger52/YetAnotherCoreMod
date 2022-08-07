@@ -29,12 +29,6 @@ public class Networking {
 
             INSTANCE = net;
 
-            net.messageBuilder(AddStatPacket.class,id(), NetworkDirection.PLAY_TO_SERVER)
-                    .decoder(AddStatPacket::new)
-                    .encoder(AddStatPacket::toBytes)
-                    .consumer(AddStatPacket::handle)
-                    .add();
-
 
 
     }

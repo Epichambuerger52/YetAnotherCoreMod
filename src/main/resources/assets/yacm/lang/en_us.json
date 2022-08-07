@@ -2,7 +2,8 @@
 "item.yacm.modium_ingot": "Modium Ingot",
 "key.yacm.open_gui": "Open GUI",
 "key.category.yacm": "Yet Another Core Mod",
-"itemGroup.coretab": "Yet Another Core Mod"
+"itemGroup.coretab": "Yet Another Core Mod",
+"yacm.menu.button": "+"
 
 
 
